@@ -23,7 +23,7 @@
         </div>
         <div class="form-floating">
           {{ form.password(placeholder="password", class="form-control mb-2") }}
-          {{ form.password.label }}
+	  {{ form.password.label }}
             {% if form.password.errors %}
               {% for error in form.password.errors %}
                 <div class="alert alert-danger" role="alert">
@@ -33,8 +33,8 @@
             {% endif %}
         </div>
         <div class="form-floating">
-          {{ form.password(placeholder="Confirm Password", class="form-control mb-2") }}
-          {{ form.password.label }}
+          {{ form.confirm(placeholder="Confirm Password", class="form-control mb-2") }}
+          {{ form.confirm.label }}
             {% if form.confirm.errors %}
               {% for error in form.confirm.errors %}
                 <div class="alert alert-danger" role="alert">

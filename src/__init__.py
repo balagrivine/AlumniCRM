@@ -4,9 +4,15 @@ from flask_bcrypt import Bcrypt
 from flask_login import LoginManager
 from flask_migrate import Migrate
 from flask_sqlalchemy import SQLAlchemy
+from flask_mail import Mail, Message
 
 app = Flask(__name__)
+
+#configuring parameters
 app.config.from_object(config("APP_SETTINGS"))
+
+#create an email instance
+mail = Mail(app)
 
 login_manager = LoginManager(app)
 #login_manager.init_app(app)
@@ -33,3 +39,4 @@ from src.accounts.models import User
 @login_manager.user_loader
 def load_user(user_id):
     return User.query.get(user_id)
+
