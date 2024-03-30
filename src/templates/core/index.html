@@ -1,6 +1,51 @@
-{% extends "_base.html" %}
+{% extends '_base.html' %}
+
 {% block content %}
+<div class="main-container">
+	<h1>AlumUnity</h1>
+	<p>Connect and engage with your alumni community</p>
+	<button class="signup-button"><a href="{{ url_for('accounts.register') }}">Explore AlumUnity</a></button>
+	<section class="features">
+		<div class="image">
+			<img src="" alt="Alumni networking"/>
+		</div>
+		<div class="description">
+			<h2 class="heading">Robust Alumni Network</h2>
+			<p class="text">Connect with fellow alimni, share experiences, and collaborate on opportunities within your trusted network</p>
+		</div>
+	</section>
+	<section class="event-management">
+		<div class="description">
+			<h2 class="heading">Seamless Event Management</h2>
+			<p class="text">Organize and manage alumni events  effortlessly, form invitations to RSVPs and event analytics</p>
+		</div>
+		<div class="image">
+			<img src="" alt="Event Management"/>
+		</div>
+	</section>
+	<section>
+		<div class="image">
+			<img src="" alt="Career Support"/>
+		</div>
+		<div class="description">
+			<h2>Career Support and Resources</h2>
+			<p>Access exclusive career resources, job postings, and mentorship opportunities to accelerate your professional growth</p>
+		</div>
+	</section>
 
-<h1 class="text-center">Welcome {{current_user.email}}!</h1>
-
+</div>
+<div class="about">
+	<section class="about-text">
+		About AlumUnity
+	</section>
+	<div class="divider">
+	</div>
+	<section class="about-description">
+		AlumUnity was born out of a desire tomsterngthen the bond within alumni communities. As former students ourselves, we understand the importance ofstaying connected and supporting each other beyond graduation. Our joourney to create Alumunity started witha  simple idea: to build a platform that facilitates meaningful interactions and fosters lifelong connections among alumni. This project is not a requirement for Holberton School; it's our pssion proect aimed at making a positive impact on alumni networks worldwide.
+	</section>
+	<section class="team-members">
+		<h2>Team Members</h2>
+		<p>Foward driven software engineer</p>
+	</section>
+</div>
 {% endblock %}

@@ -11,9 +11,9 @@ class Config(object):
     TESTING = False
     CSRF_ENABLED = True
     SECRET_KEY = config("SECRET_KEY", default="guess-me")
-    MAIL_SERVER = config("MAIL_SERVER")
+    MAIL_SERVER = 'smpt.gmail.com'
     SECURITY_PASSWORD_SALT = 'my_precious_two'
-    MAIL_PORT = config("MAIL_PORT")
+    MAIL_PORT = 465
     MAIL_USERNAME = environ['APP_MAIL_USERNAME']
     MAIL_PASSWORD = environ['APP_MAIL_PASSWORD']
     MAIL_USE_TLS = False
