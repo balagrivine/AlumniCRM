@@ -13,5 +13,3 @@ pip install --upgrade Flask-WTF
 pip install --upgrade itsdangerous
 pip install --upgrade SQLAlchemy
 pip install --upgrade wtforms
-python-3.9
-
