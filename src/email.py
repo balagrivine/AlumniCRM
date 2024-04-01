@@ -6,6 +6,6 @@ def send_email(to, subject, template):
         subject,
         recipients=[to],
         html=template,
-        sender=app.config['MAIL_USERNAME']
+        sender='balagrivine@gmail.com'
     )
     mail.send(msg)
