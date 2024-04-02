@@ -44,14 +44,8 @@ p {
 .description {
     text-align: center;
 }
-
-.heading {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.text {
-    font-size: 16px;
+    
+.text {font-size: 16px;
     color: #555;
 }
 
